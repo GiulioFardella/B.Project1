@@ -1,6 +1,6 @@
 package Project;
 
-public class Video extends ElementoMultimediale implements Riproducibile, Luminosita {
+public class Video extends ElementoMultimediale implements Riproducibile, Luminosita, Volume {
 
    private int durata;
    private int luminosita;
@@ -12,9 +12,11 @@ public class Video extends ElementoMultimediale implements Riproducibile, Lumino
        this.luminosita=luminosita;
        this.volume=volume;
    }
+   @Override
     public void aumentaVolume(){
        volume++;
     }
+    @Override
     public void diminuisciVolume(){
        if(volume>0){ volume--;
        } else {System.out.println("luminosità al minimo");}

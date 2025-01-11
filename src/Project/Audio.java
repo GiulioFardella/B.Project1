@@ -1,6 +1,6 @@
 package Project;
 
-public class Audio extends ElementoMultimediale implements Riproducibile {
+public class Audio extends ElementoMultimediale implements Riproducibile, Volume {
 
     private int durata;
 
@@ -15,5 +15,19 @@ public class Audio extends ElementoMultimediale implements Riproducibile {
     @Override
     public void Play() {
 
+    }
+    @Override
+    public void aumentaVolume(){
+        volume++;
+    }
+    @Override
+    public void diminuisciVolume(){
+        if(volume>0){ volume--;
+        } else {System.out.println("volume al minimo");}
+    }
+
+    @Override
+    public void Esegui() {
+        Play();
     }
 }

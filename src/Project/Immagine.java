@@ -19,4 +19,9 @@ public class Immagine extends ElementoMultimediale implements Luminosita {
          luminosita--;
       } else { System.out.println("luminosità al minimo");}
    }
+
+   @Override
+   public void Esegui() {
+
+   }
 }
