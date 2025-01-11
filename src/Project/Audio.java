@@ -14,7 +14,9 @@ public class Audio extends ElementoMultimediale implements Riproducibile, Volume
 
     @Override
     public void Play() {
-
+    for(int i=0; i<durata; i++){
+        System.out.println(titolo+ "" + "!".repeat(volume));
+    }
     }
     @Override
     public void aumentaVolume(){
