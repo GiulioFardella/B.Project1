@@ -42,4 +42,21 @@ public class Video extends ElementoMultimediale implements Riproducibile, Lumino
     public void Esegui() {
         Play();
     }
+
+    public int getVolume() {
+       return volume;
+    }
+
+    public void setVolume(int nuovoVolume) {
+       this.volume=nuovoVolume;
+    }
+
+    @Override
+    public String toString() {
+        return "Video{" + titolo +
+                "durata=" + durata +
+                ", luminosita=" + luminosita +
+                ", volume=" + volume +
+                '}';
+    }
 }

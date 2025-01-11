@@ -20,8 +20,21 @@ public class Immagine extends ElementoMultimediale implements Luminosita {
       } else { System.out.println("luminosità al minimo");}
    }
 
+
+   public void show(){
+      System.out.println(titolo+ "" + "!".repeat(luminosita));
+   }
+
+   @Override
+   public String toString() {
+      return "Immagine{" + titolo +
+              "luminosita=" + luminosita +
+              '}';
+   }
+
    @Override
    public void Esegui() {
-
+    show();
    }
 }
+
